@@ -38,15 +38,15 @@ public class Enemy : MonoBehaviour
         switch (currentState)
         {
             case State.Patrolling:
-                Patrol;
+                Patrol();
             break;
 
             case State.Chasing:
-                Chase;
+                Chase();
             break;
 
             case State.Attacking:
-                Attack;
+                Attack();
             break;
         }
     }
@@ -58,7 +58,7 @@ public class Enemy : MonoBehaviour
             currentState = State.Chasing;
         }
 
-        if(agent.reimainingDistance < 0.5f)
+        if(agent.remainingDistance < 0.5f)
         {
             SetRandomPoint();
         }
