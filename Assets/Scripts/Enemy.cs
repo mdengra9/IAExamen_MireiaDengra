@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-   /* public enum State
+    public enum State
     {
         Patrolling,
         Chasing,
@@ -82,7 +82,7 @@ public class Enemy : MonoBehaviour
 
     void Attack()
     {
-        Debud.Log("Atacando");
+        Debug.Log("Atacando");
         currentState = State.Chasing;
     }
 
@@ -91,7 +91,7 @@ public class Enemy : MonoBehaviour
         agent.destination = patrolPoints[Random.Range (0, 4)].position;
     }
 
-    bool IsInRange (float Range)
+    bool IsInRange (float range)
     {
         if(Vector3.Distance (transform.position, player.position) < range)
         {
@@ -101,5 +101,5 @@ public class Enemy : MonoBehaviour
         {
             return false;
         }
-    }*/
+    }
 }
