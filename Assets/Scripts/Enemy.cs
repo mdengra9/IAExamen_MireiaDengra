@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    public enum State
+   /* public enum State
     {
         Patrolling,
         Chasing,
@@ -72,7 +72,7 @@ public class Enemy : MonoBehaviour
             currentState = State.Patrolling;
         }
 
-        if(IsInRange (attackingRangeRange) == true)
+        if(IsInRange (attackingRange) == true)
         {
             currentState = State.Attacking;
         }
@@ -101,5 +101,5 @@ public class Enemy : MonoBehaviour
         {
             return false;
         }
-    }
+    }*/
 }
