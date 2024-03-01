@@ -88,7 +88,7 @@ public class Enemy : MonoBehaviour
 
     void SetRandomPoint()
     {
-        agent.destination = patrolPoints[Random.Range (0, 4)].position;
+        agent.destination = patrolPoints[Random.Range (0, 5)].position;
     }
 
     bool IsInRange (float range)
